@@ -125,3 +125,10 @@ a {
     display:none;
 
     }
+
+.posts {
+  /*border-top-color: lightgray;
+  border-top-style: solid;
+  border-top-width: 2px;*/
+  padding: 50px;
+}
