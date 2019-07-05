@@ -58,7 +58,7 @@ a {
   text-shadow: black 0px 0px 10px;
 }
 .maindoor #title {
-  font-size: 3.5em;
+  font-size: 3vh;
   font-family: NanumSquare;
 }
 #content-gray {
@@ -80,6 +80,7 @@ a {
 			overflow-x: hidden;
 			transition:0.5s ease-in-out;
 			padding-top: 60px;
+      font-family: KBIZHanmaumGothic;
 		}
 		.sidenav a {
 			padding: 8px 8px 8px 32px;
