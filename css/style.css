@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+/*Ubuntu*/
+body {
+  margin: 0;
+}
+.title{
+  color: white;
+  padding-left: 5vw;
+  padding-top: 2vh;
+  font-size: 20px;
+  width: 100%;
+  position: fixed;
+  background: #a17fdb;
+  height: 5vh;
+}
+.bg {
+  width: 100%;
+  height: 100vh;
+  background: #a17fdb;
+}
+.bg .title a{
+  text-decoration: none;
+  color: white;
+}
+#menu {
+  float: right;
+}
+.bg .title logo {
+  margin-left: 30px;
+  font-family: Ubuntu;
+  position: fixed;
+}
+.bgcontent {
+  padding-top: 30vh;
+  text-align: center;
+  color: white;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: violet;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+::-webkit-scrollbar {
+
+display:none;
+
+}
