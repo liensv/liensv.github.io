@@ -1,22 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 /*Ubuntu*/
 body {
   margin: 0;
+  font-family: nanumgothic;
 }
 .title{
   color: white;
   padding-left: 5vw;
-  padding-top: 2vh;
+  padding-top: 15px;
   font-size: 20px;
   width: 100%;
   position: fixed;
-  background: #a17fdb;
-  height: 5vh;
+  background: invisible;
+  height: 40px;
+}
+header .scroll{
+  background-color:#589f7b;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .bg {
   width: 100%;
   height: 100vh;
-  background: #a17fdb;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('https://cdn.discordapp.com/attachments/592729472579665926/593096779202035722/2019-06-26_00.14.26.png');
+  z-index:-1;
 }
 .bg .title a{
   text-decoration: none;
@@ -36,6 +50,7 @@ body {
   color: white;
   padding-left: 30px;
   padding-right: 30px;
+  text-shadow: 10px 4px 30px black;
 }
 .sidenav {
     height: 100%;
@@ -44,7 +59,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: violet;
+    background-color: gray;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -76,7 +91,41 @@ body {
   .sidenav a {font-size: 18px;}
 }
 ::-webkit-scrollbar {
-
 display:none;
-
+}
+#back-to-top {
+  display: inline-block;
+  background-color: gray;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#back-to-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#back-to-top:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+#back-to-top:active {
+  background-color: lightgray;
+}
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
 }

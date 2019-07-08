@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="javascript" href="js/script.js">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <title>Lien</title>
@@ -13,6 +14,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div style="text-align: center; padding: 0px; height: 100px; font-size: 30px; color: white;">Hello</div>
         <div style="background: white; height: 97vh;">
+          aa
         </div>
     </div>
     <div class="bg">
@@ -21,35 +23,60 @@
           <strong><logo><a href="#">Lien Server</a></logo></strong>
       </div>
       <div class="bgcontent">
-        <span style="font-size: 40px">RPG 서버의 새로운 해석, Lien Server</span>
+        <span style="font-size: 40px">RPG 서버의 새로운 해석,<br>Lien Server</span>
         <p>최고의 RPG서버 리언서버에서 여러분들을 초대합니다</p>
       </div>
     </div>
     <div style="width: 100%; height: 300px; background: #ebebeb; text-align: center; color: gray;">
-      <span style="font-size: 6vh; margin-top: 30px; color: gray;"><br>Hello</span><br>
-      aa
+      <span style="font-size: 6vh; margin-top: 30px; color: gray;"><br>사이트 오픈</span><br>
+      <span style="color: gray;">2019-07-08</span><br>
+        <span style="color: black;"><br>사이트가 리뉴얼 오픈되었습니다!</span>
+      </span>
+      <a id="back-to-top"></a>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>
-    <br><br><br><br><br><br><br><br><br><br><br>v
-    <br>
-    <br><br><br><br><br>
-
-    <br><br>
-    <script>
+    <a id="MOVE_TOP_BTN" href="#">TOP</a>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+$(document).ready(function(){ 
+  $(window).scroll(function(){ 
+    var scroll = $(window).scrollTop(); 
+    if(scroll>1){ 
+      $(".title").css("background","gray");  
+       }else{ 
+         $(".title").css("background","none"); 
+        } 
+      }) 
+    })
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
     }
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
+    $('.sidenav').on('scroll touchmove mousewheel', function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  return false;
+});
+$(function(){
+    $('#back-to-top').on('click',function(e){
+            e.preventDefault();
+            $('html,body').animate({scrollTop:0},600);
+  });
+
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 100) {
+      $('#back-to-top').addClass('show');
+    } else {
+      $('#back-to-top').removeClass('show');
+    }
+  });
+});
 </script>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <filter id="blur">
+        <feGaussianBlur stdDeviation="6" />
+    </filter>
+</svg>
   </body>
 </html>
