@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
-@font-face { font-family: '1'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KBIZHanmaumMyungjo.woff') format('woff'); font-weight: normal; font-style: normal; }
-/*Ubuntu*/
+@font-face { font-family: 'KBIZHanmaumMyungjo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KBIZHanmaumMyungjo.woff') format('woff'); font-weight: normal; font-style: normal; }
 body {
   margin: 0;
   font-family: nanumgothic;
