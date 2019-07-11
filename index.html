@@ -18,6 +18,8 @@
           aa
         </div>
     </div>
+    <div class="ifie">IE로 접속이 감지되었습니다. 정상적인 이용을 위해 Chrome 브라우저를 이용해 주세요</div>
+    <div id="body">
     <div class="bg">
       <div class="title">
         <span style="cursor:pointer" onclick="openNav()"><i class="fa fa-bars" style="color: white; height: 10px;"></i></span>
@@ -35,8 +37,28 @@
       </span>
       <a id="back-to-top"></a>
     </div>
+    <div style="width: 100%; height: 300px; background: #ebebeb; text-align: center; color: gray;">
+      <span style="font-size: 6vh; margin-top: 30px; color: gray;"><br>사이트 오픈</span><br>
+      <span style="color: gray;">2019-07-08</span><br>
+        <span style="color: black;"><br>사이트가 리뉴얼 오픈되었습니다!</span>
+      </span>
+    </div>
     <span style="font-size: 0px;"><a id="MOVE_TOP_BTN" href="#">TOP</a></span>
 <script>
+var agent = navigator.userAgent.toLowerCase();
+if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+  $('#body').css('display', 'none');
+  $('body').css({
+      "text-align": "center",
+      "background": "orange",
+      "overflow": "auto",
+      "overflow-x": "hidden"
+  });
+  $('.ifie').css({
+      "height": "30px",
+      "padding-top": "50vh"
+  });
+}
 $(document).ready(function(){ 
   $(window).scroll(function(){ 
     var scroll = $(window).scrollTop(); 
