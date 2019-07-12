@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: nanumgothic;
+  width: 100vw;
 }
 .title{
   color: white;
